@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",                  // Modern JS features fully supported by Node 22
+    "module": "NodeNext",                // ESM modules compatible with Node 22
+    "moduleResolution": "NodeNext",      // Node-style resolution
+    "outDir": "./dist",                   // Compiled JS output
+    // "rootDir": "./src",                   // Your TS source
+    "esModuleInterop": true,              // Allows default imports from CommonJS
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,                       // Enable all strict checks
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,                 // Skip type checking for node_modules
+    "resolveJsonModule": true,            // Allow importing JSON files
+    "sourceMap": true,                     // Useful for debugging
+    "incremental": true,                  // Faster rebuilds
+    "types": ["node"],                     // Node.js types
+    "allowJs": false                       // Only TypeScript files
+  },
+  "include": ["src/**/*", "api/**/*"],    // Include both serverless and server code
+  "exclude": ["node_modules", "dist"]
+}
